@@ -9,7 +9,7 @@ First we need a simple example of a model. We will use linear regression to mode
 A small sample of heights and weights was used.
 
 ![](height-weight-data.png)
-The model in this case if a combination of the model function:
+The model in this case is a combination of the model function:
 
 _weight_(_height_) = **m** _height_ + **b**
 
