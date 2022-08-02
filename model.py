@@ -15,12 +15,15 @@ app.add_middleware(
 
 
 @app.get("/weight/{height}")
-async def weight(height: int):
+async def weight(height: int) -> dict:
     """
-    This function is used to take a height and return a weight.
-    :param height: user inputs the height
-    :return: weight
-    :model: y = mx + b
+    This function takes a height and returns an estimated weight
+        Args:
+            height: user inputs the height
+        Return: 
+            weight
+        Model: 
+            y = mx + b
     """
-    weight = 0.5772*height - 25.165
+    weight = 0.5772 * height - 25.165
     return {"weight": weight}
