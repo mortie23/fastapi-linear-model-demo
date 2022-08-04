@@ -2,7 +2,7 @@
 
 ## To demonstrate model scoring hosted as API
 
-The reason for doing this is to create a very light weight and infrastructure free way to demonstrate calling a model inference API from a web front end. It doesn't have many things you would potentially need for a real life situation like:
+The reason for doing this is to create a very light weight and infrastructure free way to demonstrate calling a model inference API from a web front end. It doesn't have many things you would potentially need for a real-life situation like:
 
 - authentication
 - authorization
@@ -12,7 +12,7 @@ It is not meant to be used for production, but simply to demonstrate the mechani
 
 ### The model
 
-First we need a simple example of a _model_. We will use linear regression to model the relationship between height and weight.
+First, we need a simple example of a _model_. We will use linear regression to model the relationship between height and weight.
 
 A small sample of heights and weights was used.
 
@@ -91,7 +91,7 @@ return {"weight": weight}
 ## R
 
 We will use Plumber.
-I am on a brilliant Chromebook at the moment which has a Debian distro on it. So I need this to get going:
+I am on a brilliant Chromebook now which has a Debian distro on it. So, I needed these api packages to get it working:
 
 ```bash
 sudo apt install libsodium-dev
@@ -262,7 +262,7 @@ INFO:     192.168.0.19:23413 - "GET /weight/150 HTTP/1.1" 200 OK
 
 ### Publish it
 
-To follow this process you don't need this step, but if you do, you will want to sign up for Docker Hub.
+To follow this process, you don't need this step, but if you do, you will want to sign up for Docker Hub.
 
 1. Sign up to Docker Hub
 1. Create an access token
@@ -301,7 +301,7 @@ d6fdd6832d95: Skipped foreign layer
 
 ![](./img/docker-published-linux.png)
 
-### Test it one another platform
+### Test it on another platform
 
 Now we see the benefit of all of this (hopefully). To get the whole thing running on another platform (another local machine or even a cloud VM) we can just to the following:
 
